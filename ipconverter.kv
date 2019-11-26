@@ -1,0 +1,115 @@
+<MainWindow>:
+    font_name: "DroidSansMono"
+    name: "main"
+    ip: ip
+    mask: mask
+    iplable: iplable
+    masklable: masklable
+
+    Label:
+        id: iplable
+        text: "IP Address:"
+        pos_hint: {"x": 0.2, "top": 0.94}
+        size_hint: 0.6,0.05
+    Label:
+        id:masklable
+        text: "Subnet Mask"
+        pos_hint: {"x": 0.2, "top": 0.83}
+        size_hint: 0.6,0.05
+    Button:
+        id: ip
+        text: ""
+        pos_hint: {"x": 0.2, "top": 0.89}
+        size_hint: 0.6,0.07
+        on_release:
+            root.switchToIp()
+    Button:
+        id: mask
+        text: ""
+        pos_hint: {"x": 0.2, "top": 0.78}
+        size_hint: 0.6,0.07
+        on_release:
+            root.switchToMask()
+    Button:
+        id: submit
+        text: "Show Results"
+        pos_hint: {"x": 0.2, "y": 0.59}
+        size_hint: 0.6,0.08
+        on_release:
+            root.submitbtn()
+    Button:
+        text: "<-"
+        pos_hint: {"x": 0.005, "bottom": 1}
+        size_hint: 0.33,0.13
+        on_release:
+            root.backspace()
+    Button:
+        text: "0"
+        pos_hint: {"x": 0.335, "bottom": 1}
+        size_hint: 0.33,0.13
+        on_release:
+            root.zero()
+    Button:
+        text: "."
+        pos_hint: {"x": 0.665, "bottom": 1}
+        size_hint: 0.33,0.13
+        on_release:
+            root.dot()
+    Button:
+        text: "1"
+        pos_hint: {"x": 0.005, "y": 0.13}
+        size_hint: 0.33,0.13
+        on_release:
+            root.one()
+    Button:
+        text: "2"
+        pos_hint: {"x": 0.335, "y": 0.13}
+        size_hint: 0.33,0.13
+        on_release:
+            root.two()
+    Button:
+        text: "3"
+        pos_hint: {"x": 0.665, "y": 0.13}
+        size_hint: 0.33,0.13
+        on_release:
+            root.three()
+    Button:
+        text: "4"
+        pos_hint: {"x": 0.005, "y": 0.26}
+        size_hint: 0.33,0.13
+        on_release:
+            root.four()
+    Button:
+        text: "5"
+        pos_hint: {"x": 0.335, "y": 0.26}
+        size_hint: 0.33,0.13
+        on_release:
+            root.five()
+    Button:
+        text: "6"
+        pos_hint: {"x": 0.665, "y": 0.26}
+        size_hint: 0.33,0.13
+        on_release:
+            root.six()
+    Button:
+        text: "7"
+        pos_hint: {"x": 0.005, "y": 0.39}
+        size_hint: 0.33,0.13
+        on_release:
+            root.seven()
+    Button:
+        text: "8"
+        pos_hint: {"x": 0.335, "y": 0.39}
+        size_hint: 0.33,0.13
+        on_release:
+            root.eight()
+    Button:
+        text: "9"
+        pos_hint: {"x": 0.665, "y": 0.39}
+        size_hint: 0.33,0.13
+        on_release:
+            root.nine()
+
+
+
+
